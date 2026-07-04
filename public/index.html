@@ -13,29 +13,20 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="deco deco-heart heart1">♡</div>
-    <div class="deco deco-star star1">✦</div>
-    <div class="deco deco-heart heart2">♥</div>
-    <div class="deco deco-star star2">✧</div>
-    <div class="deco deco-heart heart3">♡</div>
-
     <main class="container">
       <!-- Lado esquerdo: Polaroid -->
       <section class="left">
-        <h1 class="title">Minha Polaroidzinha ♡</h1>
+        <h1 class="title">Contador de passadas e chokadas da Gisele!!</h1>
 
-        <label for="photo-input" class="upload-btn">
-          <span>📷 Escolher foto</span>
-          <input type="file" id="photo-input" accept="image/*" hidden />
-        </label>
+        <h2 class="subtitle">Todos sabemos o quanto nossa amiga Gisele gosta de falar essas duas palavras, por isso fiz esse contador para anotarmos quantas vezes ela fala em uma noite essas duas palavras</h2>
 
         <div class="polaroid" id="polaroid">
           <div class="tape"></div>
           <div class="photo-area" id="photo-area">
-            <span class="placeholder">Sua foto vai aparecer aqui ♡</span>
+            <img src="/Gisele.jpeg" alt="Gisele" id="gisele-photo" />
           </div>
           <p class="caption" contenteditable="true" spellcheck="false">
-            escreva uma legendinha...
+            Gisele sendo Gisele ♡
           </p>
         </div>
       </section>
@@ -48,7 +39,7 @@
           <input
             class="counter-label"
             type="text"
-            value="Beijinhos"
+            value="PASSADA!"
             maxlength="24"
           />
           <div class="counter-value" id="count1">0</div>
@@ -59,7 +50,7 @@
           <input
             class="counter-label"
             type="text"
-            value="Abraços"
+            value="CHOKADA!"
             maxlength="24"
           />
           <div class="counter-value" id="count2">0</div>

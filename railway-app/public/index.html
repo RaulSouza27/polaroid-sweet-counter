@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Polaroid & Contadores ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="deco deco-heart heart1">♡</div>
+    <div class="deco deco-star star1">✦</div>
+    <div class="deco deco-heart heart2">♥</div>
+    <div class="deco deco-star star2">✧</div>
+    <div class="deco deco-heart heart3">♡</div>
+
+    <main class="container">
+      <!-- Lado esquerdo: Polaroid -->
+      <section class="left">
+        <h1 class="title">Minha Polaroidzinha ♡</h1>
+
+        <label for="photo-input" class="upload-btn">
+          <span>📷 Escolher foto</span>
+          <input type="file" id="photo-input" accept="image/*" hidden />
+        </label>
+
+        <div class="polaroid" id="polaroid">
+          <div class="tape"></div>
+          <div class="photo-area" id="photo-area">
+            <span class="placeholder">Sua foto vai aparecer aqui ♡</span>
+          </div>
+          <p class="caption" contenteditable="true" spellcheck="false">
+            escreva uma legendinha...
+          </p>
+        </div>
+      </section>
+
+      <!-- Lado direito: Contadores -->
+      <section class="right">
+        <h2 class="subtitle">Meus Contadores ✦</h2>
+
+        <div class="counter-card">
+          <input
+            class="counter-label"
+            type="text"
+            value="Beijinhos"
+            maxlength="24"
+          />
+          <div class="counter-value" id="count1">0</div>
+          <button class="btn-plus" data-target="count1">+1</button>
+        </div>
+
+        <div class="counter-card">
+          <input
+            class="counter-label"
+            type="text"
+            value="Abraços"
+            maxlength="24"
+          />
+          <div class="counter-value" id="count2">0</div>
+          <button class="btn-plus" data-target="count2">+1</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

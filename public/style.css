@@ -213,6 +213,13 @@ body {
   transform: scale(1.15);
 }
 
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
 .btn-plus {
   border: none;
   background: linear-gradient(135deg, #ff9ec7, #c9a7ff);
@@ -226,6 +233,20 @@ body {
   box-shadow: 0 8px 18px rgba(255, 158, 199, 0.45);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+.btn-minus {
+  border: none;
+  background: linear-gradient(135deg, #8f516b, #c9a7ff);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.7rem 2.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(255, 158, 199, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
 .btn-plus:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 22px rgba(255, 158, 199, 0.55);
